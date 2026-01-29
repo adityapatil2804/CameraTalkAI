@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CameraTalkAI</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <!-- React (CDN) -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- Babel (JSX without build tools) -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- TensorFlow.js (required by face-api) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.7.0/dist/tf.min.js"></script>
+
+  <!-- MediaPipe Hands (for Live Fingers widget) -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+  <!-- OpenCV.js (for Track Mode) -->
+  <script async src="https://docs.opencv.org/4.x/opencv.js"></script>
+
+  <!-- face-api (local) -->
+  <script src="./face-api.min.js"></script>
+
+  <!-- App -->
+  <script type="text/babel" src="./app.js"></script>
+</body>
+</html>
